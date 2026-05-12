@@ -91,9 +91,21 @@ cp news-sentiment-engine/SKILL.md ~/.claude/skills/news-sentiment-engine.md
 
 Works with Claude Code 1.0+, Cursor, Codex CLI, Gemini CLI, and any agent supporting the SKILL.md standard.
 
+## Need Help Setting This Up?
+
+Not a developer but want these running on your portfolio? I offer a 1:1 setup session:
+
+- **60 min Zoom** — install Claude Code, configure the skills for your tickers
+- **1 week Slack support** — questions answered as you run it live
+- **$99 flat** — [Book a session →](https://calendly.com/tellmefrankie) *(link coming soon)*
+
+Or join the **[Options Anomaly Weekly](https://options-anomaly.substack.com)** newsletter — every Monday I publish the top 3 options signals from the live scanner, with interpretation. Free to start.
+
 ## Author
 
 Built by [@tellmefrankie](https://github.com/tellmefrankie) — CTO running a multi-agent investment system daily.
+
+> "I'd rather know the signal exists and decide to ignore it than never see it in the first place."
 
 ## License
 
