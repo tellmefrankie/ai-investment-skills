@@ -4,6 +4,8 @@ Battle-tested Claude Code skills for investment analysis. Built from 6+ months o
 
 **[Get the Pro Bundle on Gumroad ($29) →](https://jaehyunpark.gumroad.com/l/tcyahy)**
 
+> Read the case study: [XLI Put/Call Hit 5.32 While SPY Was at 0.44 — My Claude Scanner Caught It Live](https://dev.to/tellmefrankie/when-the-market-whispers-through-sector-etfs-the-xli-pc-532-signal-14l8) · [How I Built a 24/7 AI Growth Engine with Claude Code](https://dev.to/tellmefrankie/how-i-built-a-247-ai-growth-engine-with-claude-code-no-devops-required-1hhc)
+
 ![Dashboard Overview](./screenshots/dashboard-2026-05-13.png)
 ![Discussion Tab](./screenshots/dashboard-discussion-2026-05-13.png)
 
