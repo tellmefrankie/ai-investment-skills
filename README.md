@@ -2,6 +2,11 @@
 
 Battle-tested Claude Code skills for investment analysis. Built from 6+ months of live portfolio management with real money on the line.
 
+**[Get the Pro Bundle on Gumroad ($29) →](https://jaehyunpark.gumroad.com/l/tcyahy)**
+
+![Dashboard Overview](./screenshots/dashboard-2026-05-13.png)
+![Discussion Tab](./screenshots/dashboard-discussion-2026-05-13.png)
+
 ## Skills
 
 ### Free
