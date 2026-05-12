@@ -98,3 +98,9 @@ Built by [@tellmefrankie](https://github.com/tellmefrankie) — CTO running a mu
 ## License
 
 MIT
+
+---
+
+If these skills saved you from a bad trade or helped you catch a signal, consider starring the repo — it helps others find it.
+
+[![GitHub stars](https://img.shields.io/github/stars/tellmefrankie/ai-investment-skills?style=social)](https://github.com/tellmefrankie/ai-investment-skills/stargazers)
