@@ -33,12 +33,12 @@ Battle-tested Claude Code skills for investment analysis. Built from 6+ months o
 
 ## Live Output Examples
 
-### Options Flow Analyzer — real signal detected 2026-05-12
+### Options Flow Analyzer — 5-week sector divergence (2026-05-06 to 05-12)
 
 ```
 Ticker  PCR    Signal
 ------  -----  ------------------------------------------
-XLI     5.32   ⚠ EXTREME HEDGE — 5x above normal range
+XLI     5.32   ⚠ EXTREME HEDGE — 5x above normal range (5 days straight)
 IWM     1.70   ⚠ Defensive positioning
 QQQ     0.54   ✓ Bullish call skew
 SPY     0.44   ✓ Bullish call skew
@@ -50,9 +50,20 @@ Interpretation: Smart money hedging industrials/small-caps while
 holding tech longs. Sector rotation or macro hedge in play.
 ```
 
-> This signal was caught live. Raw PCR on XLI looked like a typo —
-> it wasn't. Without the lottery-call filter, CEG and KTOS would have
-> read as neutral (PCR ~1.0). They weren't.
+XLI five-session consecutive readings (no lottery calls — all real flow):
+
+```
+2026-05-06  PCR: 4.98
+2026-05-07  PCR: 4.92
+2026-05-08  PCR: 4.98
+2026-05-11  PCR: 5.52
+2026-05-12  PCR: 5.32  ← caught live
+```
+
+> Five straight sessions above PCR 4.9. Single-day spikes can be noise.
+> Five days of sustained institutional put-buying in one sector, while
+> SPY sits at 0.44, is a positioning thesis. Without the lottery-call
+> filter, CEG would have read as neutral (PCR ~1.0). It wasn't.
 
 ### News Sentiment Engine — sample output
 
