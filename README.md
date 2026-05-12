@@ -29,15 +29,15 @@ Battle-tested Claude Code skills for investment analysis. Built from 6+ months o
 ### Options Flow Analyzer — real signal detected 2026-05-12
 
 ```
-Ticker  PCR    Avg IV   Signal
-------  -----  -------  ------------------------------------------
-XLI     5.32   47.76    ⚠ EXTREME HEDGE — 5x above normal range
-IWM     1.70   475.45   ⚠ Defensive positioning
-QQQ     0.54   2000.0   ✓ Bullish call skew
-SPY     0.44   2000.0   ✓ Bullish call skew
-MP      0.88   174.48   ~ Neutral
-CEG     1.06   110.26   lottery_pct: 98.4% ← strip lottery calls first
-KTOS    0.53   170.10   lottery_pct: 98.2% ← strip lottery calls first
+Ticker  PCR    Signal
+------  -----  ------------------------------------------
+XLI     5.32   ⚠ EXTREME HEDGE — 5x above normal range
+IWM     1.70   ⚠ Defensive positioning
+QQQ     0.54   ✓ Bullish call skew
+SPY     0.44   ✓ Bullish call skew
+MP      0.88   ~ Neutral
+CEG     1.06   lottery_pct: 98.4% ← strip lottery calls first
+KTOS    0.53   lottery_pct: 98.2% ← strip lottery calls first
 
 Interpretation: Smart money hedging industrials/small-caps while
 holding tech longs. Sector rotation or macro hedge in play.
