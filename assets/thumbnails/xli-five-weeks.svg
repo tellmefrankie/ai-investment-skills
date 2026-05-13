@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="50%" stop-color="#0d2137"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#10b98100"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#166534" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Tag badge -->
+  <rect x="60" y="52" width="160" height="36" rx="6" fill="#064e3b" stroke="#10b98140" stroke-width="1"/>
+  <text x="140" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#6ee7b7" text-anchor="middle" letter-spacing="1">#OPTIONS FLOW</text>
+
+  <!-- 5 week dots -->
+  <circle cx="930" cy="70" r="9" fill="#10b981"/>
+  <circle cx="956" cy="70" r="9" fill="#10b981"/>
+  <circle cx="982" cy="70" r="9" fill="#10b981"/>
+  <circle cx="1008" cy="70" r="9" fill="#10b981"/>
+  <circle cx="1034" cy="70" r="9" fill="#10b981"/>
+  <text x="1055" y="76" font-family="system-ui, sans-serif" font-size="12" fill="#86efac" letter-spacing="1">5 WEEKS STRAIGHT</text>
+
+  <!-- Main title -->
+  <text x="60" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" fill="#f0fdf4" letter-spacing="-1">My AI scanner flagged</text>
+  <text x="60" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="62" font-weight="800" fill="#34d399" letter-spacing="-1">XLI for 5 weeks straight</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="350" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#86efac">P/C 3.1 → 4.1 → 4.6 → 4.9 → 5.32. When do you finally listen?</text>
+
+  <!-- Stats row -->
+  <text x="60" y="440" font-family="system-ui, sans-serif" font-size="36" font-weight="800" fill="#34d399">5.32</text>
+  <text x="60" y="462" font-family="system-ui, sans-serif" font-size="12" fill="#86efac80" letter-spacing="1">PEAK P/C RATIO</text>
+
+  <text x="260" y="440" font-family="system-ui, sans-serif" font-size="36" font-weight="800" fill="#34d399">-4.1%</text>
+  <text x="260" y="462" font-family="system-ui, sans-serif" font-size="12" fill="#86efac80" letter-spacing="1">VS SPX AFTER SIGNAL</text>
+
+  <text x="480" y="440" font-family="system-ui, sans-serif" font-size="36" font-weight="800" fill="#34d399">6.1</text>
+  <text x="480" y="462" font-family="system-ui, sans-serif" font-size="12" fill="#86efac80" letter-spacing="1">ADJUSTED (FILTERED)</text>
+
+  <!-- Bottom author -->
+  <circle cx="68" cy="555" r="5" fill="#10b981"/>
+  <text x="84" y="560" font-family="system-ui, sans-serif" font-size="15" fill="#86efac">tellmefrankie · dev.to</text>
+
+  <!-- Accent line -->
+  <rect x="1100" y="548" width="60" height="3" rx="2" fill="url(#accent)"/>
+</svg>
