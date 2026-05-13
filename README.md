@@ -4,7 +4,7 @@
 
 Built from 6+ months of live portfolio management. Not demos — these run every morning on a real account.
 
-> **[Get the Pro Bundle — $29 one-time →](https://jaehyunpark.gumroad.com/l/tcyahy)**
+> **[Get the Pro Bundle — $29 one-time →](https://jaehyunpark.gumroad.com/l/tcyahy?utm_source=github&utm_medium=readme)**
 
 ---
 
@@ -47,7 +47,7 @@ XLI at 5.32 = someone bought roughly 5 puts for every 1 call on the entire US in
 | [Price Monitor & Alert](./price-monitor-alert/) | Stop-loss/take-profit with Telegram alerts | Alert delivery under 2 seconds |
 | [Multi-Agent Orchestrator](./multi-agent-orchestrator/) | Parallel agent teams with built-in quality harness | 4 agents, 1 consensus output |
 
-**[Get the Pro Bundle — $29 ->](https://jaehyunpark.gumroad.com/l/tcyahy)**
+**[Get the Pro Bundle — $29 ->](https://jaehyunpark.gumroad.com/l/tcyahy?utm_source=github&utm_medium=readme)**
 
 The free skills show the architecture. The pro bundle is what runs every trading day.
 
