@@ -1,6 +1,6 @@
 # AI Investment Skills for Claude Code
 
-Six Claude Code skills for individual investors — options flow scanner, stop-loss monitor, earnings risk check, sector rotation signal, lottery-call filter, and 9-wave morning briefing.
+10+ Claude Code skills — investment analysis and developer tools — options flow scanner, stop-loss monitor, earnings risk check, sector rotation signal, lottery-call filter, and 9-wave morning briefing.
 
 Built from 6+ months of live portfolio management. Not demos — these run every morning on a real account.
 
@@ -50,6 +50,19 @@ XLI at 5.32 = someone bought roughly 5 puts for every 1 call on the entire US in
 **[Get the Pro Bundle — $29 ->](https://jaehyunpark.gumroad.com/l/tcyahy)**
 
 The free skills show the architecture. The pro bundle is what runs every trading day.
+
+### Dev Tools — free, no investment needed
+
+| Skill | What it does |
+|-------|-------------|
+| [Git Standup](./git-standup/) | Reads 24h git log → writes your standup (yesterday/today/blockers) |
+| [PR Review Prep](./pr-review-prep/) | Reads git diff → generates PR description, test plan, risk assessment |
+| [Claude Cost Tracker](./claude-cost-tracker/) | Breaks down API spend by model/project, flags Opus→Sonnet downgrade candidates |
+| [Commit Roast](./commit-roast/) | Brutally honest code review of your commit history. 30% comedy, 70% real feedback |
+| [Context Budget](./context-budget/) | Tracks context window usage, warns at 85%, generates session checkpoint files |
+| [Debug Trail](./debug-trail/) | Auto-documents debugging sessions including dead ends. Generates structured bug reports |
+
+No API keys needed for any dev tool. Just git and Claude Code.
 
 ---
 
