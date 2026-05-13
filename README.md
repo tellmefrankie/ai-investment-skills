@@ -35,8 +35,8 @@ XLI at 5.32 = someone bought roughly 5 puts for every 1 call on the entire US in
 
 | Skill | What it does | Key number |
 |-------|-------------|------------|
-| [EV Calculator](./ev-calculator/) | Probability-weighted bull/base/bear scenario analysis | 3 scenarios -> 1 decision |
-| [News Sentiment Engine](./news-sentiment-engine/) | 200+ RSS articles scored by ticker/sector, Telegram delivery | 2 hrs reading -> 5 min digest |
+| [EV Calculator](./ev-calculator/) — [Live on Agensi](https://www.agensi.io/skills/ev-calculator-expected-value-stock-analyzer) | Probability-weighted bull/base/bear scenario analysis | 3 scenarios -> 1 decision |
+| [News Sentiment Engine](./news-sentiment-engine/) — [Live on Agensi](https://www.agensi.io/skills/news-sentiment-engine-ai-tech-news-analyzer) | 200+ RSS articles scored by ticker/sector, Telegram delivery | 2 hrs reading -> 5 min digest |
 
 ### Pro Bundle — $29 one-time
 
