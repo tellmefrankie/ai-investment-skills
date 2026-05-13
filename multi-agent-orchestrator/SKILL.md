@@ -67,8 +67,9 @@ Available agent types: researcher, analyst, critic, developer, planner
 
 ## Pricing
 
-Free: 2-agent workflows
-Pro ($19/month): Unlimited agents + harness rules + synthesis templates
+Free: 2-agent workflows (included in GitHub repo)
+**Full bundle — $29 one-time**: Unlimited agents + all harness rules + synthesis templates + investment skills suite
+→ https://jaehyunpark.gumroad.com/l/tcyahy
 
 ## Author
 

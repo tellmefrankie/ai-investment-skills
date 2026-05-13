@@ -45,8 +45,9 @@ Focus on: earnings catalysts, options flow anomalies, sector rotation signals.
 
 ## Pricing
 
-Free tier: Macro + Sector analysis only
-Pro ($29/month): Full 9-wave briefing with critic and simulation
+Free tier: Macro + Sector analysis only (waves 1-2)
+**Full bundle — $29 one-time**: All 9 waves + Anti-Narrative Harness + all skills below
+→ https://jaehyunpark.gumroad.com/l/tcyahy
 
 ## Author
 

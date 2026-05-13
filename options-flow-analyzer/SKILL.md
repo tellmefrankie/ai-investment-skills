@@ -32,7 +32,7 @@ Flag any anomalies in the last 24 hours.
 
 ## Requirements
 
-- Polygon.io API key ($29/month for options data)
+- Polygon.io API key (free tier covers basic data; paid tier for full chain)
 - WebSearch for cross-verification
 
 ## Key Discovery
@@ -42,7 +42,8 @@ This real/lottery separation was discovered during live portfolio management whe
 ## Pricing
 
 Free: Basic P/C ratio for 3 tickers
-Pro ($29/month): Real/lottery separation + anomaly detection + per-expiry + unlimited tickers
+**Full bundle — $29 one-time**: Real/lottery separation + anomaly detection + per-expiry + unlimited tickers + all other skills
+→ https://jaehyunpark.gumroad.com/l/tcyahy
 
 ## Author
 

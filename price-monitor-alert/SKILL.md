@@ -35,8 +35,9 @@ Alert me via Telegram. Check every 5 minutes during market hours.
 
 ## Pricing
 
-Free: Monitor up to 3 tickers
-Pro ($19/month): Unlimited tickers + options flow alerts
+Free: Monitor up to 3 tickers (included in GitHub repo)
+**Full bundle — $29 one-time**: Unlimited tickers + options flow alerts + all investment skills
+→ https://jaehyunpark.gumroad.com/l/tcyahy
 
 ## Author
 
