@@ -1,0 +1,152 @@
+{
+  "ticker": "CEL",
+  "snapshot_date": "2026-05-20",
+  "description": "Clean options chain with minimal lottery-call noise — raw and adjusted P/C ratios are nearly identical, signal is reliable",
+  "summary": {
+    "total_call_volume": 42810,
+    "total_put_volume": 38940,
+    "raw_put_call_ratio": 0.91,
+    "adjusted_put_call_ratio": 0.93,
+    "lottery_pct": 4.8,
+    "signal_raw": "neutral-slight-bearish",
+    "signal_adjusted": "neutral-slight-bearish"
+  },
+  "lottery_filter": {
+    "definition": "calls with bid <= 0.05 and ask <= 0.05 (penny/lottery contracts)",
+    "lottery_call_volume": 2055,
+    "non_lottery_call_volume": 40755,
+    "lottery_call_pct": 4.8
+  },
+  "adjusted_volumes": {
+    "calls": 40755,
+    "puts": 38940,
+    "put_call_ratio": 0.96
+  },
+  "chain": [
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 22.0,
+      "bid": 1.85,
+      "ask": 1.95,
+      "volume": 9200,
+      "open_interest": 28400,
+      "lottery": false,
+      "note": "near ATM call — clean directional flow"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 23.0,
+      "bid": 1.10,
+      "ask": 1.18,
+      "volume": 7850,
+      "open_interest": 21600,
+      "lottery": false,
+      "note": "slightly OTM call"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 24.0,
+      "bid": 0.55,
+      "ask": 0.62,
+      "volume": 6420,
+      "open_interest": 17800,
+      "lottery": false
+    },
+    {
+      "expiry": "2026-06-20",
+      "type": "call",
+      "strike": 25.0,
+      "bid": 0.72,
+      "ask": 0.80,
+      "volume": 8340,
+      "open_interest": 24200,
+      "lottery": false
+    },
+    {
+      "expiry": "2026-06-20",
+      "type": "call",
+      "strike": 26.0,
+      "bid": 0.38,
+      "ask": 0.44,
+      "volume": 6490,
+      "open_interest": 14900,
+      "lottery": false
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 30.0,
+      "bid": 0.03,
+      "ask": 0.05,
+      "volume": 1240,
+      "open_interest": 4100,
+      "lottery": true,
+      "note": "minimal lottery call — below noise threshold"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 32.0,
+      "bid": 0.01,
+      "ask": 0.04,
+      "volume": 815,
+      "open_interest": 2200,
+      "lottery": true,
+      "note": "minimal lottery call"
+    },
+    {
+      "expiry": "2026-06-20",
+      "type": "call",
+      "strike": 28.0,
+      "bid": 0.14,
+      "ask": 0.18,
+      "volume": 2455,
+      "open_interest": 6800,
+      "lottery": false
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "put",
+      "strike": 21.0,
+      "bid": 1.70,
+      "ask": 1.80,
+      "volume": 9800,
+      "open_interest": 26500,
+      "lottery": false,
+      "note": "near ATM put — meaningful positioning"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "put",
+      "strike": 20.0,
+      "bid": 1.02,
+      "ask": 1.10,
+      "volume": 7620,
+      "open_interest": 19400,
+      "lottery": false
+    },
+    {
+      "expiry": "2026-06-20",
+      "type": "put",
+      "strike": 20.0,
+      "bid": 1.28,
+      "ask": 1.36,
+      "volume": 11340,
+      "open_interest": 31200,
+      "lottery": false
+    },
+    {
+      "expiry": "2026-06-20",
+      "type": "put",
+      "strike": 18.0,
+      "bid": 0.65,
+      "ask": 0.72,
+      "volume": 10180,
+      "open_interest": 22800,
+      "lottery": false
+    }
+  ]
+}

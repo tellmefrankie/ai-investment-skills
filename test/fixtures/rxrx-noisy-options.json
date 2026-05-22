@@ -1,0 +1,181 @@
+{
+  "ticker": "RXRX",
+  "snapshot_date": "2026-05-20",
+  "description": "Noisy options chain with heavy lottery-call contamination — raw P/C appears bullish but adjusted P/C reveals bearish signal",
+  "summary": {
+    "total_call_volume": 184320,
+    "total_put_volume": 70042,
+    "raw_put_call_ratio": 0.38,
+    "adjusted_put_call_ratio": 2.38,
+    "lottery_pct": 84,
+    "signal_raw": "bullish",
+    "signal_adjusted": "bearish"
+  },
+  "lottery_filter": {
+    "definition": "calls with bid <= 0.05 and ask <= 0.05 (penny/lottery contracts)",
+    "lottery_call_volume": 154829,
+    "non_lottery_call_volume": 29491,
+    "lottery_call_pct": 84.0
+  },
+  "adjusted_volumes": {
+    "calls": 29491,
+    "puts": 70042,
+    "put_call_ratio": 2.38
+  },
+  "chain": [
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 5.0,
+      "bid": 0.01,
+      "ask": 0.02,
+      "volume": 28400,
+      "open_interest": 142000,
+      "lottery": true,
+      "note": "deep OTM lottery call — inflates raw call volume"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 6.0,
+      "bid": 0.01,
+      "ask": 0.03,
+      "volume": 31200,
+      "open_interest": 98500,
+      "lottery": true,
+      "note": "deep OTM lottery call"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 7.0,
+      "bid": 0.02,
+      "ask": 0.04,
+      "volume": 27650,
+      "open_interest": 87300,
+      "lottery": true,
+      "note": "deep OTM lottery call"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 8.0,
+      "bid": 0.01,
+      "ask": 0.05,
+      "volume": 24810,
+      "open_interest": 61200,
+      "lottery": true,
+      "note": "deep OTM lottery call"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 9.0,
+      "bid": 0.01,
+      "ask": 0.03,
+      "volume": 18940,
+      "open_interest": 43700,
+      "lottery": true,
+      "note": "deep OTM lottery call"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 10.0,
+      "bid": 0.01,
+      "ask": 0.04,
+      "volume": 13820,
+      "open_interest": 29400,
+      "lottery": true,
+      "note": "deep OTM lottery call"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 11.0,
+      "bid": 0.01,
+      "ask": 0.02,
+      "volume": 10009,
+      "open_interest": 18200,
+      "lottery": true,
+      "note": "deep OTM lottery call — last major lottery cluster"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 3.5,
+      "bid": 0.28,
+      "ask": 0.32,
+      "volume": 8200,
+      "open_interest": 22100,
+      "lottery": false,
+      "note": "near ATM call — legitimate directional flow"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "call",
+      "strike": 4.0,
+      "bid": 0.12,
+      "ask": 0.15,
+      "volume": 11450,
+      "open_interest": 34800,
+      "lottery": false,
+      "note": "slightly OTM call — legitimate"
+    },
+    {
+      "expiry": "2026-06-20",
+      "type": "call",
+      "strike": 4.5,
+      "bid": 0.18,
+      "ask": 0.22,
+      "volume": 9841,
+      "open_interest": 28600,
+      "lottery": false,
+      "note": "June expiry call — legitimate"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "put",
+      "strike": 3.0,
+      "bid": 0.35,
+      "ask": 0.40,
+      "volume": 18200,
+      "open_interest": 51400,
+      "lottery": false,
+      "note": "near ATM put — bearish positioning"
+    },
+    {
+      "expiry": "2026-05-23",
+      "type": "put",
+      "strike": 2.5,
+      "bid": 0.18,
+      "ask": 0.22,
+      "volume": 14750,
+      "open_interest": 39200,
+      "lottery": false,
+      "note": "OTM put — bearish hedge"
+    },
+    {
+      "expiry": "2026-06-20",
+      "type": "put",
+      "strike": 3.0,
+      "bid": 0.55,
+      "ask": 0.62,
+      "volume": 21480,
+      "open_interest": 68900,
+      "lottery": false,
+      "note": "June put — substantial bearish flow"
+    },
+    {
+      "expiry": "2026-06-20",
+      "type": "put",
+      "strike": 2.0,
+      "bid": 0.22,
+      "ask": 0.28,
+      "volume": 15612,
+      "open_interest": 44100,
+      "lottery": false,
+      "note": "deep OTM put protection"
+    }
+  ]
+}

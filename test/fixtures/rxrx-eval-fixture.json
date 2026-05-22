@@ -1,0 +1,135 @@
+{
+  "schema_version": "2.0.0",
+  "fixture_id": "eval_rxrx_20260520_lottery_inversion",
+  "created_at": "2026-05-22T09:00:00Z",
+  "description": "RXRX lottery-call contamination case: raw P/C 0.38 (bullish) inverts to adjusted P/C 2.38 (bearish) after removing 84% lottery volume. Tests whether Critic correctly identifies signal inversion when given BOTH raw and adjusted metrics.",
+  "tags": ["lottery_filter", "signal_inversion", "options_flow", "rxrx"],
+
+  "signals": [
+    {
+      "signal_id": "sig_rxrx_options_flow_20260520090000",
+      "observed_at": "2026-05-20T09:00:00Z",
+      "source": "options_flow",
+      "entity": "RXRX",
+      "raw_metrics": {
+        "total_call_volume": 184320,
+        "total_put_volume": 70042,
+        "raw_put_call_ratio": 0.38,
+        "total_call_oi": 527200,
+        "total_put_oi": 203600
+      },
+      "adjusted_metrics": {
+        "non_lottery_call_volume": 29491,
+        "adjusted_put_call_ratio": 2.38,
+        "lottery_call_volume": 154829,
+        "lottery_pct": 84.0,
+        "real_call_pct": 16.0
+      },
+      "annotations": [
+        "84% of call volume is lottery (bid<=0.05, ask<=0.05)",
+        "Signal inversion: raw appears bullish, adjusted reveals bearish",
+        "7 deep OTM lottery strikes ($5-$11) vs 3 legitimate strikes ($3.50-$4.50)",
+        "Put side is clean — no lottery contamination on puts"
+      ],
+      "source_confidence": 0.92,
+      "noise_flags": [
+        {
+          "type": "lottery_volume",
+          "severity": "critical",
+          "detail": "84% of call volume comes from contracts priced at $0.01-$0.05. Likely retail lottery activity, not institutional positioning.",
+          "metric_key": "lottery_pct",
+          "threshold": 50,
+          "actual_value": 84.0
+        }
+      ]
+    },
+    {
+      "signal_id": "sig_rxrx_technical_20260520093000",
+      "observed_at": "2026-05-20T09:30:00Z",
+      "source": "technical",
+      "entity": "RXRX",
+      "raw_metrics": {
+        "price": 3.42,
+        "rsi_14": 38.2,
+        "sma_20": 3.85,
+        "sma_50": 4.12,
+        "volume_vs_avg_pct": -15
+      },
+      "adjusted_metrics": {},
+      "annotations": [
+        "Trading below both 20 and 50 SMA — bearish structure",
+        "RSI approaching oversold but not yet at 30"
+      ],
+      "source_confidence": 0.85,
+      "noise_flags": []
+    }
+  ],
+
+  "reasoning": {
+    "reasoning_id": "rsn_20260520100000_x8k3m2",
+    "reasoned_at": "2026-05-20T10:00:00Z",
+    "consumed_signal_ids": [
+      "sig_rxrx_options_flow_20260520090000",
+      "sig_rxrx_technical_20260520093000"
+    ],
+    "verdict": "reject",
+    "confidence": 0.88,
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "examined": "Raw P/C ratio of 0.38 suggests strong bullish sentiment",
+        "conclusion": "Surface-level bullish reading is misleading due to lottery contamination",
+        "signal_refs": ["sig_rxrx_options_flow_20260520090000"]
+      },
+      {
+        "step_number": 2,
+        "examined": "84% lottery volume flag — 154,829 of 184,320 call contracts are penny lottery tickets",
+        "conclusion": "After filtering lottery volume, real call volume is only 29,491 vs 70,042 puts. True P/C is 2.38 — strongly bearish",
+        "signal_refs": ["sig_rxrx_options_flow_20260520090000"]
+      },
+      {
+        "step_number": 3,
+        "examined": "Technical confirmation: price below 20/50 SMA, RSI 38.2",
+        "conclusion": "Technicals align with adjusted (bearish) options signal, not with raw (bullish) reading",
+        "signal_refs": ["sig_rxrx_technical_20260520093000"]
+      },
+      {
+        "step_number": 4,
+        "examined": "Cross-validation of options + technicals",
+        "conclusion": "Reject bullish thesis. Both adjusted options flow and technicals point bearish. Raw P/C is noise-contaminated and should not inform position sizing.",
+        "signal_refs": [
+          "sig_rxrx_options_flow_20260520090000",
+          "sig_rxrx_technical_20260520093000"
+        ]
+      }
+    ],
+    "counter_evidence": [
+      {
+        "source": "biotech_catalyst_calendar",
+        "claim": "RXRX has potential FDA catalyst in June which could explain speculative call buying",
+        "contradicts_signal_id": "sig_rxrx_options_flow_20260520090000",
+        "strength": "moderate"
+      }
+    ],
+    "modification": null,
+    "resource_usage": {
+      "input_tokens": 4200,
+      "output_tokens": 890,
+      "model": "claude-sonnet-4-20250514",
+      "latency_ms": 3200
+    }
+  },
+
+  "outcome": {
+    "recorded_at": "2026-05-22T09:00:00Z",
+    "entity": "RXRX",
+    "horizon": "1w",
+    "price_change_pct": -4.8,
+    "direction": "down",
+    "critic_correct": true,
+    "raw_signal_correct": false,
+    "notes": "Critic correctly rejected bullish reading. Stock declined 4.8% over the week. Raw signal would have been directionally wrong."
+  },
+
+  "temporal_gap_seconds": 1800
+}

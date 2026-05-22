@@ -1,0 +1,57 @@
+{
+  "name": "ai-investment-skills",
+  "version": "1.0.0",
+  "description": "Options flow scanner with lottery-ticket filtering, multi-agent investment debate system, and Anti-Narrative Harness for Claude Code",
+  "author": "tellmefrankie",
+  "repository": "https://github.com/tellmefrankie/ai-investment-skills",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "options-flow-analyzer",
+      "description": "Analyze options chains with real vs lottery call separation. Prevents P/C ratio misinterpretation — RXRX raw 0.38 (bullish) became 2.38 (bearish) after filtering 84% lottery calls.",
+      "path": "options-flow-analyzer/SKILL.md",
+      "tags": ["finance", "options", "trading", "analysis", "polygon-api"],
+      "requires": ["polygon.io API key"]
+    },
+    {
+      "name": "price-monitor-alert",
+      "description": "Stop-loss and take-profit alerts via Telegram. Market hours aware — only fires during US trading hours.",
+      "path": "price-monitor-alert/SKILL.md",
+      "tags": ["finance", "alerts", "telegram", "monitoring"],
+      "requires": ["telegram bot token"]
+    },
+    {
+      "name": "news-sentiment-engine",
+      "description": "RSS news collection → Claude AI analysis → Telegram delivery. Sentiment scoring, industry tagging, impact rating.",
+      "path": "news-sentiment-engine/SKILL.md",
+      "tags": ["news", "sentiment", "ai-analysis", "telegram", "rss"],
+      "requires": ["anthropic API key", "telegram bot token"]
+    },
+    {
+      "name": "investment-briefing-agent",
+      "description": "9-wave daily briefing covering macro, sector, technical, news, opportunities, risks, scenarios, cross-connections, and actionable signals.",
+      "path": "investment-briefing-agent/SKILL.md",
+      "tags": ["finance", "briefing", "multi-wave", "analysis"],
+      "requires": []
+    },
+    {
+      "name": "multi-agent-orchestrator",
+      "description": "9 specialized agents debating stock positions via threaded discussions. Scanner, Critic, Analyst, Strategist, Cross-Validator with Anti-Narrative Harness.",
+      "path": "multi-agent-orchestrator/SKILL.md",
+      "tags": ["multi-agent", "debate", "orchestration", "finance"],
+      "requires": []
+    },
+    {
+      "name": "ev-calculator",
+      "description": "Expected value calculator for stock positions with probability-weighted scenario analysis.",
+      "path": "ev-calculator/SKILL.md",
+      "tags": ["finance", "expected-value", "probability", "analysis"],
+      "requires": []
+    }
+  ],
+  "keywords": ["investment", "options", "trading", "multi-agent", "finance", "lottery-filter", "anti-narrative"],
+  "eval_fixtures": {
+    "path": "test/fixtures/",
+    "cases": ["rxrx-noisy-options.json", "cel-clean-options.json"]
+  }
+}

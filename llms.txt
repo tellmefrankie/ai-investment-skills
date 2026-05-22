@@ -1,0 +1,45 @@
+# AI Investment Skills
+
+> Open-source Claude Code skills for investment analysis — options flow scanner, price monitoring, multi-agent debate system.
+
+## Skills
+
+### Options Flow Analyzer
+Analyzes options chain data with real vs lottery call separation. Raw P/C ratios are misleading — 84% of RXRX calls were $0.01 lottery tickets, making raw P/C 0.38 (bullish) when adjusted P/C was 2.38 (bearish). Uses Polygon.io API.
+- Path: /options-flow-analyzer/SKILL.md
+
+### Price Monitor Alert
+Stop-loss and take-profit alerts via Telegram. Market hours aware — only fires during US market hours (9:30 AM - 4:00 PM ET). Uses Yahoo Finance.
+- Path: /price-monitor-alert/SKILL.md
+
+### News Sentiment Engine
+RSS news collection → Claude AI analysis → Telegram delivery. Covers TechCrunch, The Verge, Ars Technica, Hacker News, Korean sources. Sentiment scoring, industry tagging, impact rating.
+- Path: /news-sentiment-engine/SKILL.md
+
+### Investment Briefing Agent
+9-wave daily briefing: Macro → Sector → Technical → News → Finder → Critic → Simulator → DeepConnections → Meta. Produces actionable signals with cross-validation.
+- Path: /investment-briefing-agent/SKILL.md
+
+### Multi-Agent Orchestrator
+9 specialized agents (Scanner, Critic, Analyst, Strategist, Cross-Validator) debating stock positions via threaded discussions. Anti-Narrative Harness enforces numbers over stories.
+- Path: /multi-agent-orchestrator/SKILL.md
+
+### EV Calculator
+Expected value calculator for stock positions. Factors in probability-weighted upside/downside scenarios.
+- Path: /ev-calculator/SKILL.md
+
+## Key Concepts
+
+### Lottery Filter
+Options priced at $0.01-$0.05 (deep OTM) inflate raw P/C ratios. Filtering these reveals the actual institutional signal. Example: RXRX raw P/C 0.38 → adjusted 2.38 after removing 84% lottery calls.
+
+### Anti-Narrative Harness
+Rules that prevent AI agents from constructing misleading market narratives: cross-validate earnings dates, never attribute past events to current dates, numbers over stories.
+
+### Signal-Side Context vs Reasoning-Side Outcome
+Eval fixtures capture both what data the Critic saw (raw composition + cleaned ratio) and what conclusion it reached (debate transcript + decision). Enables retuning signal cleaning without losing reasoning quality data.
+
+## Links
+
+- GitHub: https://github.com/tellmefrankie/ai-investment-skills
+- Test fixtures: /test/fixtures/ (RXRX noisy chain, CEL clean chain)
