@@ -138,6 +138,50 @@ Works with Claude Code, Cursor, Codex CLI, Gemini CLI — any agent supporting t
 
 ---
 
+## Options Analysis API (NEW)
+
+Live lottery-filtered options analysis. Returns adjusted P/C ratios with signal classification.
+
+```
+GET /api/v1/options/scan?ticker=RXRX
+
+{
+  "ticker": "RXRX",
+  "price": 3.01,
+  "raw_pc": 0.29,
+  "adjusted_pc": 1.73,
+  "lottery_pct": 64.92,
+  "signal": "bearish",
+  "call_volume": 5416,
+  "put_volume": 3282,
+  "avg_iv": 149.41
+}
+```
+
+Bulk scan up to 10 tickers: `/api/v1/options/bulk?tickers=RXRX,TEM,CEG`
+
+Free tier: 5 requests/day. Docs at `/api/docs`.
+
+---
+
+## Eval Fixtures
+
+Test the lottery filter against real-world noisy options chains:
+
+```bash
+npx tsx test/lottery-filter.test.ts
+# 12 passed, 0 failed
+
+npx tsx test/eval-fixture.test.ts
+# 23 passed, 0 failed
+```
+
+- `test/fixtures/rxrx-noisy-options.json` — 84% lottery, signal inversion (raw bullish → adjusted bearish)
+- `test/fixtures/cel-clean-options.json` — 5% lottery, no inversion (control)
+- `test/fixtures/rxrx-eval-fixture.json` — full schema with signal/reasoning/outcome separation
+
+---
+
 ## dev.to series: Building in Public
 
 Real results from running these skills on a live portfolio.
