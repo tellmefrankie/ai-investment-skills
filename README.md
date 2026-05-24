@@ -195,8 +195,6 @@ Real results from running these skills on a live portfolio.
 
 ## Follow along
 
-**[Options Anomaly Weekly](https://options-anomaly.substack.com)** — every Monday, the top 3 scanner signals with interpretation. Free.
-
 **[GitHub Discussions](https://github.com/tellmefrankie/ai-investment-skills/discussions)** — live scanner output and Q&A.
 
 ---
