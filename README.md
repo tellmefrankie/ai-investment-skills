@@ -1,6 +1,6 @@
 # AI Investment Skills for Claude Code
 
-10+ Claude Code skills — investment analysis and developer tools — options flow scanner, stop-loss monitor, earnings risk check, sector rotation signal, lottery-call filter, and 9-wave morning briefing.
+10+ Claude Code skills — investment analysis and developer tools — options flow scanner, BTC/ETH crypto options scanner, stop-loss monitor, earnings risk check, sector rotation signal, lottery-call filter, and 9-wave morning briefing.
 
 Built from 6+ months of live portfolio management. Not demos — these run every morning on a real account.
 
@@ -48,6 +48,22 @@ XLI at 5.32 = someone bought roughly 5 puts for every 1 call on the entire US in
 | [Multi-Agent Orchestrator](./multi-agent-orchestrator/) | Parallel agent teams with built-in quality harness | 4 agents, 1 consensus output |
 
 **[Get the Pro Bundle — $29 ->](https://jaehyunpark.gumroad.com/l/tcyahy?utm_source=github&utm_medium=readme)**
+
+### New: BTC/ETH crypto options mode
+
+The options-flow analyzer now includes a Deribit crypto path for BTC and ETH options:
+
+- no-auth Deribit public market data
+- BTC/ETH-denominated premium normalized to USD
+- crypto-specific lottery-call threshold: cheap premium plus deep OTM or low delta
+- raw P/C, adjusted P/C, lottery percentage, per-expiry breakdown
+- rolling 30-day baseline anomaly flags for adjusted P/C shifts
+
+Validation fixture:
+
+```bash
+npx tsx test/crypto-options-flow.test.ts
+```
 
 The free skills show the architecture. The pro bundle is what runs every trading day.
 
@@ -174,11 +190,15 @@ npx tsx test/lottery-filter.test.ts
 
 npx tsx test/eval-fixture.test.ts
 # 23 passed, 0 failed
+
+npx tsx test/crypto-options-flow.test.ts
+# 7 passed, 0 failed
 ```
 
 - `test/fixtures/rxrx-noisy-options.json` — 84% lottery, signal inversion (raw bullish → adjusted bearish)
 - `test/fixtures/cel-clean-options.json` — 5% lottery, no inversion (control)
 - `test/fixtures/rxrx-eval-fixture.json` — full schema with signal/reasoning/outcome separation
+- `test/fixtures/deribit-btc-crypto-options.json` — Deribit-shaped BTC chain with crypto premium normalization and rolling-baseline anomaly flags
 
 ---
 

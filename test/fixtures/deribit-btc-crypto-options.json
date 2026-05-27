@@ -1,0 +1,159 @@
+{
+  "currency": "BTC",
+  "snapshot_date": "2026-05-28",
+  "description": "Deribit-shaped BTC option chain where cheap deep-OTM call volume hides bearish put demand until crypto-specific lottery filtering is applied.",
+  "thresholds": {
+    "max_abs_delta": 0.15,
+    "max_premium_usd": 25,
+    "min_out_of_money_pct": 12
+  },
+  "baseline": [
+    { "date": "2026-04-29", "raw_put_call_ratio": 0.81, "adjusted_put_call_ratio": 1.05, "lottery_pct": 21.2 },
+    { "date": "2026-04-30", "raw_put_call_ratio": 0.79, "adjusted_put_call_ratio": 1.02, "lottery_pct": 22.1 },
+    { "date": "2026-05-01", "raw_put_call_ratio": 0.77, "adjusted_put_call_ratio": 1.08, "lottery_pct": 24.0 },
+    { "date": "2026-05-02", "raw_put_call_ratio": 0.83, "adjusted_put_call_ratio": 1.11, "lottery_pct": 23.7 },
+    { "date": "2026-05-03", "raw_put_call_ratio": 0.8, "adjusted_put_call_ratio": 1.06, "lottery_pct": 22.8 },
+    { "date": "2026-05-04", "raw_put_call_ratio": 0.78, "adjusted_put_call_ratio": 1.03, "lottery_pct": 21.9 },
+    { "date": "2026-05-05", "raw_put_call_ratio": 0.82, "adjusted_put_call_ratio": 1.1, "lottery_pct": 23.2 },
+    { "date": "2026-05-06", "raw_put_call_ratio": 0.84, "adjusted_put_call_ratio": 1.12, "lottery_pct": 24.1 },
+    { "date": "2026-05-07", "raw_put_call_ratio": 0.8, "adjusted_put_call_ratio": 1.07, "lottery_pct": 22.6 },
+    { "date": "2026-05-08", "raw_put_call_ratio": 0.79, "adjusted_put_call_ratio": 1.04, "lottery_pct": 21.5 }
+  ],
+  "contracts": [
+    {
+      "instrument": {
+        "instrument_name": "BTC-28JUN26-75000-C",
+        "base_currency": "BTC",
+        "option_type": "call",
+        "expiration_timestamp": 1782633600000,
+        "strike": 75000,
+        "is_active": true
+      },
+      "summary": {
+        "instrument_name": "BTC-28JUN26-75000-C",
+        "bid_price": 0.021,
+        "ask_price": 0.023,
+        "mid_price": 0.022,
+        "mark_price": 0.022,
+        "volume": 960,
+        "open_interest": 2400,
+        "mark_iv": 61.2,
+        "underlying_price": 68000,
+        "volume_usd": 1436160
+      },
+      "order_book": {
+        "instrument_name": "BTC-28JUN26-75000-C",
+        "greeks": { "delta": 0.36 },
+        "underlying_price": 68000
+      }
+    },
+    {
+      "instrument": {
+        "instrument_name": "BTC-28JUN26-83000-C",
+        "base_currency": "BTC",
+        "option_type": "call",
+        "expiration_timestamp": 1782633600000,
+        "strike": 83000,
+        "is_active": true
+      },
+      "summary": {
+        "instrument_name": "BTC-28JUN26-83000-C",
+        "bid_price": 0.0002,
+        "ask_price": 0.0004,
+        "mid_price": 0.0003,
+        "mark_price": 0.0003,
+        "volume": 1420,
+        "open_interest": 9100,
+        "mark_iv": 78.4,
+        "underlying_price": 68000,
+        "volume_usd": 28968
+      },
+      "order_book": {
+        "instrument_name": "BTC-28JUN26-83000-C",
+        "greeks": { "delta": 0.08 },
+        "underlying_price": 68000
+      }
+    },
+    {
+      "instrument": {
+        "instrument_name": "BTC-28JUN26-90000-C",
+        "base_currency": "BTC",
+        "option_type": "call",
+        "expiration_timestamp": 1782633600000,
+        "strike": 90000,
+        "is_active": true
+      },
+      "summary": {
+        "instrument_name": "BTC-28JUN26-90000-C",
+        "bid_price": 0.0001,
+        "ask_price": 0.0002,
+        "mid_price": 0.00015,
+        "mark_price": 0.00015,
+        "volume": 1180,
+        "open_interest": 8500,
+        "mark_iv": 84.1,
+        "underlying_price": 68000,
+        "volume_usd": 12036
+      },
+      "order_book": {
+        "instrument_name": "BTC-28JUN26-90000-C",
+        "greeks": { "delta": 0.04 },
+        "underlying_price": 68000
+      }
+    },
+    {
+      "instrument": {
+        "instrument_name": "BTC-28JUN26-66000-P",
+        "base_currency": "BTC",
+        "option_type": "put",
+        "expiration_timestamp": 1782633600000,
+        "strike": 66000,
+        "is_active": true
+      },
+      "summary": {
+        "instrument_name": "BTC-28JUN26-66000-P",
+        "bid_price": 0.019,
+        "ask_price": 0.022,
+        "mid_price": 0.0205,
+        "mark_price": 0.0205,
+        "volume": 740,
+        "open_interest": 1800,
+        "mark_iv": 58.7,
+        "underlying_price": 68000,
+        "volume_usd": 1031560
+      },
+      "order_book": {
+        "instrument_name": "BTC-28JUN26-66000-P",
+        "greeks": { "delta": -0.45 },
+        "underlying_price": 68000
+      }
+    },
+    {
+      "instrument": {
+        "instrument_name": "BTC-28JUN26-60000-P",
+        "base_currency": "BTC",
+        "option_type": "put",
+        "expiration_timestamp": 1782633600000,
+        "strike": 60000,
+        "is_active": true
+      },
+      "summary": {
+        "instrument_name": "BTC-28JUN26-60000-P",
+        "bid_price": 0.006,
+        "ask_price": 0.007,
+        "mid_price": 0.0065,
+        "mark_price": 0.0065,
+        "volume": 620,
+        "open_interest": 4200,
+        "mark_iv": 70.3,
+        "underlying_price": 68000,
+        "volume_usd": 273700
+      },
+      "order_book": {
+        "instrument_name": "BTC-28JUN26-60000-P",
+        "greeks": { "delta": -0.19 },
+        "underlying_price": 68000
+      }
+    }
+  ]
+}
