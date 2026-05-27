@@ -8,10 +8,10 @@
   "skills": [
     {
       "name": "options-flow-analyzer",
-      "description": "Analyze options chains with real vs lottery call separation. Prevents P/C ratio misinterpretation — RXRX raw 0.38 (bullish) became 2.38 (bearish) after filtering 84% lottery calls.",
+      "description": "Analyze equity and BTC/ETH options chains with real vs lottery call separation. Prevents P/C ratio misinterpretation — RXRX raw 0.38 (bullish) became 2.38 (bearish) after filtering 84% lottery calls.",
       "path": "options-flow-analyzer/SKILL.md",
-      "tags": ["finance", "options", "trading", "analysis", "polygon-api"],
-      "requires": ["polygon.io API key"]
+      "tags": ["finance", "options", "crypto-options", "trading", "analysis", "polygon-api", "deribit-api"],
+      "requires": ["polygon.io API key for equities", "Deribit public API for BTC/ETH"]
     },
     {
       "name": "price-monitor-alert",
@@ -52,6 +52,6 @@
   "keywords": ["investment", "options", "trading", "multi-agent", "finance", "lottery-filter", "anti-narrative"],
   "eval_fixtures": {
     "path": "test/fixtures/",
-    "cases": ["rxrx-noisy-options.json", "cel-clean-options.json"]
+    "cases": ["rxrx-noisy-options.json", "cel-clean-options.json", "deribit-btc-crypto-options.json"]
   }
 }

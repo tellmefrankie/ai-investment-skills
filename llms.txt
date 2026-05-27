@@ -5,7 +5,7 @@
 ## Skills
 
 ### Options Flow Analyzer
-Analyzes options chain data with real vs lottery call separation. Raw P/C ratios are misleading — 84% of RXRX calls were $0.01 lottery tickets, making raw P/C 0.38 (bullish) when adjusted P/C was 2.38 (bearish). Uses Polygon.io API.
+Analyzes options chain data with real vs lottery call separation. Raw P/C ratios are misleading — 84% of RXRX calls were $0.01 lottery tickets, making raw P/C 0.38 (bullish) when adjusted P/C was 2.38 (bearish). Uses Polygon.io API for equities and Deribit public market data for BTC/ETH crypto options.
 - Path: /options-flow-analyzer/SKILL.md
 
 ### Price Monitor Alert
@@ -31,7 +31,7 @@ Expected value calculator for stock positions. Factors in probability-weighted u
 ## Key Concepts
 
 ### Lottery Filter
-Options priced at $0.01-$0.05 (deep OTM) inflate raw P/C ratios. Filtering these reveals the actual institutional signal. Example: RXRX raw P/C 0.38 → adjusted 2.38 after removing 84% lottery calls.
+Options priced at $0.01-$0.05 (deep OTM) inflate raw P/C ratios. Filtering these reveals the actual institutional signal. Example: RXRX raw P/C 0.38 -> adjusted 2.38 after removing 84% lottery calls. For BTC/ETH options, convert Deribit BTC/ETH-denominated premiums to USD first, then flag cheap deep-OTM or low-delta calls as lottery volume.
 
 ### Anti-Narrative Harness
 Rules that prevent AI agents from constructing misleading market narratives: cross-validate earnings dates, never attribute past events to current dates, numbers over stories.
